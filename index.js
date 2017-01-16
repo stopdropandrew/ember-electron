@@ -4,6 +4,7 @@
 var fs = require('fs');
 var path = require('path');
 
+const config = require(`${__dirname}/../dist/config`);
 var getRemoteDebugSocketScript = require('./lib/helpers/remote-debug-script');
 
 function injectScript(scriptName) {
